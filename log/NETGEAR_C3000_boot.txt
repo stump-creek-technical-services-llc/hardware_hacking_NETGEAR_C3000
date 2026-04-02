@@ -1,0 +1,138 @@
+BCM338332 TP0 Minimum AVS ADC = 859 (949 mv)
+Closure_VAVS = 867
+AVSThresholds low: ro_h = 832, ro_s = 1017
+AVSThresholds high: ro_h = 848, ro_s = 1032
+Elapsed time = 5239598 microseconds
+346890
+MemSize:            128 M
+Chip ID:     BCM3383G-B0
+
+BootLoader Version: 2.4.0 yawming spiboot dual-flash nandflash reduced DDR drive avs linux
+Build Date: Aug 26 2015
+Build Time: 10:51:25
+SPI flash ID 0xc22013, size 0MB, block size 64KB, write buffer 256, flags 0x0
+NAND flash: Device size 128 MB, Block size 128 KB, Page size 2048 B
+
+Signature/PID: c279
+
+Reading flash map at ff30, size 192
+Reading from SPI flash at 0xff30
+Successfully restored flash map from SPI flash!
+NandFlashRead: Reading offset 0x0, length 0x5c
+
+Image 1 Program Header:
+   Signature: c279
+     Control: 0005
+   Major Rev: 0003
+   Minor Rev: 0000
+  Build Time: 2019/1/17 04:15:02 Z
+ File Length: 4457920 bytes
+Load Address: 80004000
+    Filename: C3700-100NAS_V2.02.22u_sto.bin
+         HCS: 6924
+         CRC: f9e2ffbb
+
+Found image 1 at offset 80000
+NandFlashRead: Reading offset 0x4000000, length 0x5c
+
+Enter '1', '2', or 'p' within 2 seconds or take default...
+. .
+
+NandFlashRead: Reading offset 0x0, length 0x200
+NandFlashRead: Reading offset 0x200, length 0x44041c
+NandFlashRead: 1 errors reading buffer at offset 3a400
+NandFlashRead: 1 errors reading buffer at offset e9c00
+NandFlashRead: 1 errors reading buffer at offset 40d600
+Performing CRC on Image 1...
+CRC time = 119718212
+Detected LZMA compressed image... decompressing...
+Target Address: 0x80004000
+decompressSpace is 0x8000000
+Elapsed time 2850784910
+
+Decompressed length: 19212320
+Copying partition table to 0x83fffc04 180
+Copying partition table to 0x80000904 180
+
+Executing Image 1...
+
+
+ eCos - hal_diag_init
+Init device '/dev/SerialConsoleDriv'
+Init device '/dev/BrcmTelnetIoDriver'
+Init device '/dev/ttydiag'
+Init tty channel: 81256270
+Init device '/dev/tty0'
+Init tty channel: 81256290
+Init device '/dev/haldiag'
+HAL/diag SERIAL init
+Init device '/dev/ser0'
+BCM 33XX SERIAL init - dev: b4e00500.2
+Set output buffer - buf: 0x813e7900 len: 4096
+Set input buffer - buf: 0x813e8900 len: 4096
+BCM 33XX SERIAL config
+"\xB9\xA5\xD1\x81device '/dev/ser1'
+BCM 33XX SERIAL init - dev: b4e00520.3
+Set output buffer - buf: 0x813e9900 len: 4096
+Set input buffer - buf: 0x813ea900 len: 4096
+BCM 33XX SERIAL config
+
+Init device '/dev/ser2'
+InitBoard: MIPS frequency 637200000
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Configuring/Loading Flash driver...
+[00:00:00 01/01/1970] [tStartup] BcmSpiFlashDevice::DetectFlash:  (SPI Flash Device Factory) WARNING - Detected SPI flash with JEDEC ID =0xc22013
+Waited 296 iterations after device ID read
+NAND flash: Device size 128 MB, Block size 128 KB, Page size 2048 B
+[00:00:00 01/01/1970] [tStartup] BcmNandFlashDevice::DetectNandFlash:  (NAND Flash Device Factory) WARNING - Detected NAND flash with JEDEC ID =0x1f1801d
+Found bootloader flash map at 0x80000904.
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] FlashDeviceDriver::SpiFlashPlaceRegions:  (Flash Driver C API) WARNING - Partition falls out of range of device 0. Placing in device 1...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading BootloaderStore driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading ProgramStore driver...
+ProgramStoreDeviceDriver::ProgramStoreDriverInit:  INFO - Initializing...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading NonVol driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Storage drivers initialized successfully.
+FxFileStoreDeviceDriver::FxFileStoreDriverInit:  INFO - Initializing...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Creating singletons for ProgramStore/BootloaderStore/NonVol devices...
+Detecting the next image number that we will store to by default...
+Bootloader indicates we are running image 1
+By default, we will dload to image number 2!
+
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Device abstraction singletons created successfully.
+
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(0):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(0):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(1):  WARNING - the instance pointer is NULL, and someone is accessing it!
+Generate WPS PIN = 11255253
+BcmFxWiFi80211NonVolSettings::GetInstance(1):  WARNING - the instance pointer is NULL, and someone is accessing it!
+BcmPcpClientServiceAppIf::GetSingletonInstance:  WARNING - the singleton is NULL, and someone is accessing it!
+
+Reading Permanent settings from non-vol...
+Checksum for permanent settings:  0x7ae68c76
+Setting downstream calibration signature to '5.5.10mp4|die temperature:35.775degC\0\0\0\0\0'
+[00:00:00 01/01/1970] [tStartup] BcmNonVolSettings::IsDefault:  (Fx eRouter Event Log) Permanent settings are default!
+[00:00:00 01/01/1970] [tStartup] BcmNonVolSettings::IsDefault:  (Fx System Event Log) Permanent settings are default!
+[00:00:00 01/01/1970] [tStartup] BcmNonVolSettings::IsDefault:  (Fx Ping Event Log) Permanent settings are default!
+
+*
+*
+* One or more of the settings groups was missing, possibly as a result of a code upgrade.
+*
+*
+Settings were read and verified.
+
+
+Reading Dynamic settings from non-vol...
+Checksum for dynamic settings:  0x9a7a321b
+BcmPcpClientServiceAppIf::GetSingletonInstance:  WARNING - the singleton is NULL, and someone is accessing it!
+Settings were read and verified.
+
+Console input has been disabled in non-vol.
+Console output has been disabled in non-vol!  Goodbye...
+Creating SNMP agent cablemodem agent
+[00:00:00 01/01/1970] [Reset/Standby Switch Thread] BcmResetStandbySwitchThread::ProcessResetSwitchEvent:  (Reset/Standby Switch Thread) Reset switch released; resetting...
+[00:00:00 01/01/1970] [Reset/Standby Switch Thread] BcmResetStandbySwitchThread::ProcessResetSwitchEvent:  (Reset/Standby Switch Thread) Cant Reset pfCmDocsisCtlThread==NULL...
+
